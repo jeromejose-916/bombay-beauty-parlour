@@ -8,6 +8,13 @@ if (mainNav && !mainNav.querySelector('a[href="services.html"]')) {
   mainNav.insertBefore(servicesLink, mainNav.querySelector('a[href="contact.html"]'));
 }
 
+if (mainNav && !mainNav.querySelector('a[href="photos.html"]')) {
+  const photosLink = document.createElement('a');
+  photosLink.href = 'photos.html';
+  photosLink.textContent = 'Photos';
+  mainNav.insertBefore(photosLink, mainNav.querySelector('a[href="contact.html"]'));
+}
+
 const copyright = document.querySelector('.footer-bottom > span');
 
 if (copyright) {
